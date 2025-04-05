@@ -11,14 +11,14 @@ public class baekjoon_11053 {
 
 		int a = Integer.parseInt(br.readLine());
 
-		String [] arr = br.readLine().split(" ");
-		int [] arrNumber = Arrays.stream(arr).mapToInt(Integer::parseInt).toArray();
+		String[] arr = br.readLine().split(" ");
+		int[] arrNumber = Arrays.stream(arr).mapToInt(Integer::parseInt).toArray();
 
-		int [] dp = new int[a+1];
+		int[] dp = new int[a + 1];
 		Arrays.fill(dp, 1);
 		for (int i = 0; i < a; i++) {
-			for (int j = 0; j < i ; j++) {
-				if (arrNumber[j] < arrNumber[i]){
+			for (int j = 0; j < i; j++) {
+				if (arrNumber[j] < arrNumber[i]) {
 					dp[i] = Math.max(dp[j] + 1, dp[i]);
 				}
 			}
