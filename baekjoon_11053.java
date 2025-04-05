@@ -13,7 +13,6 @@ public class baekjoon_11053 {
 
 		String[] arr = br.readLine().split(" ");
 		int[] arrNumber = Arrays.stream(arr).mapToInt(Integer::parseInt).toArray();
-
 		int[] dp = new int[a + 1];
 		Arrays.fill(dp, 1);
 		for (int i = 0; i < a; i++) {
