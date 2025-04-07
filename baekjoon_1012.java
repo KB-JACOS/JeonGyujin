@@ -47,13 +47,11 @@ public class baekjoon_1012 {
 		for (int i = 0; i < size; i++) {
 			bw.write(String.valueOf(realAnswer.poll()));
 			if (i != size - 1) {
-				bw.newLine(); // 마지막이 아닌 경우에만 줄바꿈
+				bw.newLine();
 			}
 		}
 		bw.flush();
 		bw.close();
-
-		 // 리소스 정리
 
 	}
 
