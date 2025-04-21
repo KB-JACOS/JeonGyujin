@@ -8,7 +8,6 @@ public class baekjoon_14500 {
 
 	static int[] dx = {-1, 1, 0, 0};
 	static int[] dy = {0, 0, -1, 1};
-
 	static int answer = 0;
 	static int answer2 = 0;
 	static boolean[][] visited;
