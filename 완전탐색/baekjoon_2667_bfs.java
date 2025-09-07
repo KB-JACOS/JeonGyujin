@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Queue;
 
-public class baekjoon_2667 {
+public class baekjoon_2667_bfs {
 	static List<Integer> store2 = new ArrayList<>();
 	static int [][] store;
 	static boolean [][] visited;
